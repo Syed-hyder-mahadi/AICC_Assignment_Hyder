@@ -1,0 +1,42 @@
+Assignment: Decision Tree on Paper
+
+Date: 12/03/2026
+
+Description
+
+A decision tree is a machine learning model used to make decisions based on conditions. It works like a flowchart where each branch represents a decision rule and each leaf represents an outcome.
+
+In this assignment, we create a simple decision tree to predict whether you should play outside or not based on weather conditions.
+
+Factors Considered
+
+The decision is based on the following conditions:
+
+Weather (Sunny / Rainy / Cloudy)
+Temperature (Hot / Mild / Cool)
+Wind (Strong / Weak)
+Decision Tree Structure
+                Weather
+               /   |   \
+           Sunny Rainy Cloudy
+            /              \
+       Temperature        Play
+        /      \
+      Hot     Mild/Cool
+      No        Play
+           
+Rainy
+  |
+ Wind
+ /   \
+Strong Weak
+ No    Play
+Explanation
+If the weather is cloudy, you can play outside.
+If the weather is sunny and the temperature is hot, it is better not to play.
+If the weather is rainy, check the wind condition:
+Strong wind → Do not play
+Weak wind → You can play
+Conclusion
+
+Decision trees are simple yet powerful tools for making predictions based on conditions. They are widely used in machine learning because they are easy to understand and visualize. The concept is known as Decision tree learning, which helps computers make decisions by following logical rules.

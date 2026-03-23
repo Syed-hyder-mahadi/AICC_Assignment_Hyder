@@ -1,0 +1,48 @@
+Assignment: Customer Segmentation
+
+Date: 11/03/2026
+
+Description
+
+Customer segmentation is a technique used in machine learning to divide customers into groups based on similar characteristics. In this assignment, we use K-Means Clustering to analyze a mall dataset and identify different types of customers based on their behavior.
+
+Businesses and online shopping platforms such as Amazon often use similar techniques to understand customer preferences and improve marketing strategies.
+
+Python Code (K-Means Clustering)
+import pandas as pd
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Load dataset
+data = pd.read_csv("Mall_Customers.csv")
+
+# Select features (Annual Income and Spending Score)
+X = data[['Annual Income (k$)', 'Spending Score (1-100)']]
+
+# Apply K-Means clustering
+kmeans = KMeans(n_clusters=5, random_state=0)
+data['Cluster'] = kmeans.fit_predict(X)
+
+# Plot clusters
+plt.scatter(X['Annual Income (k$)'], X['Spending Score (1-100)'], c=data['Cluster'])
+plt.xlabel("Annual Income (k$)")
+plt.ylabel("Spending Score")
+plt.title("Customer Segmentation using K-Means")
+plt.show()
+Customer Groups Identified
+
+After applying K-Means clustering, customers can be divided into several groups:
+
+High Income – High Spending
+Customers who earn a lot and spend frequently. These are premium customers.
+High Income – Low Spending
+Customers with high income but low spending. They may need targeted marketing.
+Low Income – High Spending
+Customers who spend more despite lower income.
+Low Income – Low Spending
+Customers who spend less and may not be highly engaged.
+Average Income – Moderate Spending
+Regular customers with balanced income and spending patterns.
+Conclusion
+
+Customer segmentation helps businesses understand different types of customers and create better marketing strategies. Machine learning techniques like K-Means clustering can reveal useful patterns in data and improve business decisions.

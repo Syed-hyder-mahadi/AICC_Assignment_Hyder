@@ -1,0 +1,44 @@
+Assignment: Data Doctor
+
+Date: 26/02/2026
+
+Description
+
+Data cleaning is an important step in data analysis. Raw datasets often contain missing values, duplicate records, and inconsistent text formats. In this assignment, we clean a dataset by handling missing values, removing duplicates, and standardizing text.
+
+Python Code
+import pandas as pd
+
+# Load dataset
+data = pd.read_csv("data.csv")
+
+# Display first few rows
+print("Original Dataset:")
+print(data.head())
+
+# 1. Handle missing values
+data = data.fillna("Unknown")
+
+# 2. Remove duplicate rows
+data = data.drop_duplicates()
+
+# 3. Standardize text (convert text columns to lowercase)
+for col in data.select_dtypes(include='object'):
+    data[col] = data[col].str.lower()
+
+# Display cleaned dataset
+print("\nCleaned Dataset:")
+print(data.head())
+Steps Performed
+Handling Missing Values – Missing data was replaced with "Unknown" to avoid errors during analysis.
+Removing Duplicates – Duplicate rows were removed to ensure accurate results.
+Standardizing Text – Text values were converted to lowercase to maintain consistency.
+Why Data Cleaning Matters
+Improves Data Accuracy – Clean data produces more reliable analysis results.
+Prevents Errors – Missing or duplicate data can cause incorrect calculations.
+Better Machine Learning Models – AI models work best with clean, consistent data.
+Saves Time in Analysis – Organized datasets are easier to analyze.
+Ensures Consistency – Standardized text avoids confusion (e.g., “Delhi” vs “delhi”).
+Conclusion
+
+Data cleaning is an essential part of any data analysis process. Tools like Python (programming language) and Pandas (Python library) help efficiently clean and prepare datasets for analysis and machine learning.

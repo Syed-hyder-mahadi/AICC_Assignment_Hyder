@@ -1,0 +1,78 @@
+Assignment: Student Data Manager
+
+Date: 19/02/2026
+
+Description
+
+This Python program stores the marks of 5 students using dictionaries. It then:
+
+Finds the topper (highest marks)
+Calculates the class average
+Assigns grades to each student based on their marks
+Python Code
+# Student Data Manager
+
+students = {}
+
+# Input data for 5 students
+for i in range(5):
+    name = input("Enter student name: ")
+    marks = float(input("Enter marks: "))
+    students[name] = marks
+
+# Find topper
+topper = max(students, key=students.get)
+
+# Calculate class average
+average = sum(students.values()) / len(students)
+
+# Function to assign grades
+def get_grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >= 75:
+        return "B"
+    elif marks >= 60:
+        return "C"
+    elif marks >= 40:
+        return "D"
+    else:
+        return "F"
+
+# Print student grades
+print("\nStudent Grades:")
+for name, marks in students.items():
+    print(name, "-", marks, "Grade:", get_grade(marks))
+
+# Print topper
+print("\nTopper:", topper, "with", students[topper], "marks")
+
+# Print class average
+print("Class Average:", average)
+Example Output
+Enter student name: Rahul
+Enter marks: 85
+Enter student name: Priya
+Enter marks: 92
+Enter student name: Aman
+Enter marks: 76
+Enter student name: Neha
+Enter marks: 67
+Enter student name: Karan
+Enter marks: 58
+
+Student Grades:
+Rahul - 85 Grade: B
+Priya - 92 Grade: A
+Aman - 76 Grade: B
+Neha - 67 Grade: C
+Karan - 58 Grade: D
+
+Topper: Priya with 92 marks
+Class Average: 75.6
+Concepts Used
+Dictionaries
+Loops (for)
+Functions
+Conditional Statements
+Mathematical operations

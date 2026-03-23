@@ -1,0 +1,67 @@
+Assignment: KNN in Real Life
+
+Date: 07/03/2026
+
+Description
+
+The K-Nearest Neighbors (KNN) algorithm is a machine learning method used to find items that are similar to each other. It works by comparing data points and identifying the closest or most similar neighbors. This technique is commonly used in recommendation systems.
+
+Platforms like Netflix use similar ideas to recommend movies and shows based on user preferences and viewing history.
+
+How KNN Works in Recommendations
+
+In a movie recommendation system:
+
+The algorithm compares users based on movies they watched or liked.
+It finds the K most similar users (nearest neighbors).
+Then it recommends movies that those similar users enjoyed.
+
+Example:
+If User A and User B like similar movies, the system may recommend movies liked by User B to User A.
+
+Small Similarity Example
+Dataset (User Ratings)
+User	Action Movie	Comedy Movie
+User1	5	1
+User2	4	2
+User3	1	5
+User4	2	4
+
+Suppose a new user gives ratings:
+
+Action	Comedy
+4	1
+
+The KNN algorithm calculates similarity between this user and other users.
+
+Similar to User1 (5,1)
+Similar to User2 (4,2)
+
+These are the nearest neighbors, so the system will recommend movies liked by these users.
+
+Simple Python Example
+import numpy as np
+from sklearn.neighbors import NearestNeighbors
+
+# Example dataset (ratings)
+data = np.array([
+    [5,1],
+    [4,2],
+    [1,5],
+    [2,4]
+])
+
+# New user's ratings
+new_user = np.array([[4,1]])
+
+# KNN model
+model = NearestNeighbors(n_neighbors=2)
+model.fit(data)
+
+distance, index = model.kneighbors(new_user)
+
+print("Nearest neighbors index:", index)
+print("Distance:", distance)
+Conclusion
+
+KNN helps find similar users or items based on their features. Recommendation systems used by platforms like Netflix analyze user preferences and suggest content that people with similar tastes enjoy. This makes digital platforms more personalized and user-friendly.

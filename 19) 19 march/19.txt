@@ -1,0 +1,54 @@
+Assignment: Mini Project Proposal
+
+Date: 19/03/2026
+
+Project Title
+
+Student Performance Prediction System
+
+1. Problem Statement
+
+In many colleges, it is difficult to identify students who may struggle in exams before the final results. Teachers need a way to predict student performance early so they can provide support and guidance.
+This project aims to build a machine learning model that predicts whether a student is likely to perform well or need additional academic support.
+
+2. Dataset
+
+The dataset will contain information about student academic behavior, such as:
+
+Study hours per week
+Attendance percentage
+Assignment scores
+Previous exam marks
+Participation in class
+
+Each record will represent one student and include a label indicating performance level (High / Medium / Low).
+
+The dataset can be created manually or collected from sample educational datasets and analyzed using Pandas (Python library).
+
+3. Algorithm
+
+The project will use a machine learning classification algorithm such as Decision tree learning.
+
+The decision tree model will analyze patterns in the dataset and learn how different factors like attendance and study hours influence student performance.
+
+Steps:
+
+Load and prepare the dataset
+Train the decision tree model
+Test the model with new student data
+Predict the performance category
+4. Expected Output
+
+The system will predict a student's likely performance category based on input data.
+
+Example output:
+
+Student A → High Performance
+Student B → Needs Improvement
+Student C → Average Performance
+
+The results can also be visualized using charts created with Matplotlib.
+
+Conclusion
+
+This project will demonstrate how machine learning can be used in education to identify student learning patterns and provide early academic support. By using tools like Python (programming language), we can build simple predictive systems that assist teachers and improve student outcomes.

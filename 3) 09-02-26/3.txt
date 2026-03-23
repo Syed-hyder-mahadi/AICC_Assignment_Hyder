@@ -1,0 +1,51 @@
+Assignment: AI Around Me
+
+Date: 09/02/2026
+
+Introduction
+
+Artificial Intelligence (AI) is used in many applications that we interact with every day. These systems use Machine Learning (ML) to learn from data and improve their performance. Below are some real-life AI applications used in daily life.
+
+1. Google Maps
+
+AI analyzes traffic data from many users and predicts the fastest route using machine learning models.
+
+2. YouTube
+
+ML recommends videos by analyzing watch history, likes, and viewing patterns.
+
+3. Netflix
+
+AI studies viewing behavior and suggests movies or shows based on user preferences.
+
+4. Spotify
+
+Machine learning recommends songs by analyzing listening habits and favorite genres.
+
+5. Instagram
+
+AI determines which posts appear on your feed by learning from your likes, comments, and interactions.
+
+6. Google Assistant
+
+ML processes voice commands using speech recognition and natural language processing.
+
+7. Amazon
+
+AI suggests products based on your browsing history and previous purchases.
+
+8. Gmail
+
+Machine learning detects spam emails by analyzing patterns and suspicious content.
+
+9. Google Photos
+
+AI recognizes faces, objects, and locations in photos using image recognition models.
+
+10. Snapchat
+
+AI powers face filters and augmented reality effects by detecting facial features in real time.
+
+Conclusion
+
+AI is deeply integrated into our daily lives through many digital services. Machine learning allows these applications to learn from user behavior and provide smarter, personalized experiences.

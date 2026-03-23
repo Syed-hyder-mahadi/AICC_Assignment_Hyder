@@ -1,0 +1,44 @@
+Assignment: Storytelling with Graphs
+
+Date: 28/02/2026
+
+Description
+
+Data visualization helps us understand patterns and trends easily. In this assignment, we create different types of graphs such as a bar chart, pie chart, and histogram to analyze data and explain insights through a short data story.
+
+Python Code
+import matplotlib.pyplot as plt
+
+# Sample data (students' marks)
+subjects = ['Math', 'Science', 'English', 'History', 'Computer']
+marks = [85, 90, 78, 70, 95]
+
+# 1. Bar Chart
+plt.bar(subjects, marks)
+plt.title("Marks in Different Subjects")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.show()
+
+# 2. Pie Chart
+plt.pie(marks, labels=subjects, autopct='%1.1f%%')
+plt.title("Marks Distribution")
+plt.show()
+
+# 3. Histogram
+plt.hist(marks, bins=5)
+plt.title("Marks Distribution Histogram")
+plt.xlabel("Marks")
+plt.ylabel("Frequency")
+plt.show()
+Graphs Created
+Bar Chart – Shows comparison of marks across different subjects.
+Pie Chart – Displays the percentage distribution of marks.
+Histogram – Shows the frequency distribution of marks.
+Data Story (Short Explanation)
+
+The graphs show that Computer and Science have the highest marks, indicating strong performance in technical subjects. The bar chart highlights differences between subjects, while the pie chart shows that Computer contributes the largest percentage of marks. The histogram shows that most marks fall between 75 and 95, indicating generally good academic performance.
+
+Conclusion
+
+Using visualization tools like Matplotlib in Python (programming language) helps transform raw data into meaningful insights and makes it easier to explain trends through visual storytelling. 📊

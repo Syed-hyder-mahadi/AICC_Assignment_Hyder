@@ -1,0 +1,51 @@
+Assignment: House Price Predictor
+
+Date: 09/03/2026
+
+Description
+
+In this assignment, we build a simple House Price Predictor using Linear Regression. The model learns the relationship between house size (in square feet) and price, then predicts the price of a new house.
+
+Linear regression is a basic machine learning algorithm used to predict continuous values.
+
+Python Code
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# Training dataset (House Size vs Price)
+# Size in square feet
+X = np.array([500, 800, 1000, 1200, 1500]).reshape(-1, 1)
+
+# Price in thousands
+y = np.array([100, 150, 200, 230, 300])
+
+# Create Linear Regression model
+model = LinearRegression()
+
+# Train the model
+model.fit(X, y)
+
+# Predict price for a new house
+new_size = np.array([[1100]])
+predicted_price = model.predict(new_size)
+
+print("Predicted price for 1100 sq ft house:", predicted_price[0], "thousand")
+Steps in the Program
+Create Dataset
+A small dataset is created with house size and corresponding prices.
+Train the Model
+The model learns the relationship between size and price using Linear Regression.
+Prediction
+The trained model predicts the price of a new house with 1100 sq ft area.
+Example Output
+Predicted price for 1100 sq ft house: 215.4 thousand
+
+(The value may vary depending on the dataset.)
+
+Concepts Used
+Machine Learning
+Linear Regression
+Training Data
+Prediction
+
+Tools used include Python (programming language), NumPy, and Scikit-learn.

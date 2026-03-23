@@ -1,0 +1,52 @@
+Assignment: Spam Classifier Thinking
+
+Date: 10/03/2026
+
+Description
+
+A spam detection system is used to automatically identify unwanted or harmful messages in emails or messages. Machine Learning models can analyze message patterns and classify them as spam or not spam.
+
+Email services such as Gmail use AI-based spam filters to protect users from unwanted messages.
+
+1. Features Used for Spam Detection
+
+Features are the characteristics of the data that help the model make predictions.
+
+Possible features include:
+
+Presence of suspicious words like “free”, “win”, “offer”, “prize”.
+Number of links in the message.
+Sender email address reputation.
+Number of capital letters used in the message.
+Presence of attachments or unknown files.
+Frequency of repeated words.
+2. Data Needed
+
+To train a spam detection system, we need a dataset of labeled messages.
+
+Examples of required data:
+
+A collection of emails or messages.
+Each message labeled as Spam or Not Spam.
+Sender information.
+Message content (text).
+Timestamp and frequency of messages.
+
+This data helps the machine learning model learn patterns that distinguish spam from normal messages.
+
+3. Possible Mistakes (Errors)
+False Positive
+
+A normal message is incorrectly marked as spam.
+Example: A genuine promotional email from a company is moved to the spam folder.
+
+False Negative
+
+A spam message is incorrectly classified as normal.
+Example: A scam email appears in the inbox instead of the spam folder.
+
+Both types of mistakes can affect user experience and system reliability.
+
+Conclusion
+
+Spam detection systems use machine learning to analyze message patterns and protect users from unwanted or harmful emails. With good training data and features, platforms like Gmail can automatically filter most spam messages and improve email security.

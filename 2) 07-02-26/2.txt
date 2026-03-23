@@ -1,0 +1,47 @@
+Python Code: Strong Password Authentication
+import re
+
+def check_password_strength(password):
+    
+    if len(password) < 8:
+        return "Password must be at least 8 characters long."
+    
+    if not re.search("[A-Z]", password):
+        return "Password must contain at least one uppercase letter."
+    
+    if not re.search("[a-z]", password):
+        return "Password must contain at least one lowercase letter."
+    
+    if not re.search("[0-9]", password):
+        return "Password must contain at least one digit."
+    
+    if not re.search("[@#$%^&*!]", password):
+        return "Password must contain at least one special character (@#$%^&*!)."
+    
+    return "Strong Password ✅"
+
+def authenticate():
+    stored_password = "Secure@123"
+    
+    user_password = input("Enter your password: ")
+    
+    strength = check_password_strength(user_password)
+    print(strength)
+    
+    if user_password == stored_password:
+        print("Authentication Successful 🔓")
+    else:
+        print("Authentication Failed ❌")
+
+authenticate()
+How the Code Works
+The program asks the user to enter a password.
+It checks whether the password meets strong security rules.
+If the password matches the stored password, authentication is successful.
+Otherwise, access is denied.
+
+✅ Example Strong Passwords
+
+Secure@123
+MyPass#2026
+Strong!AI9

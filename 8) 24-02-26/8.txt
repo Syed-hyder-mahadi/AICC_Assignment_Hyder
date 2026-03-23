@@ -1,0 +1,51 @@
+Assignment: Dataset Detective
+
+Date: 24/02/2026
+
+Description
+
+In this assignment, a dataset is loaded and analyzed using Python. The program displays the top rows of the dataset, finds the column with the highest value, counts missing values, and extracts useful insights from the data.
+
+Python Code
+import pandas as pd
+
+# Load dataset (example: CSV file)
+data = pd.read_csv("data.csv")
+
+# Display top rows
+print("Top 5 Rows of Dataset:")
+print(data.head())
+
+# Find column with highest value
+max_column = data.max(numeric_only=True).idxmax()
+max_value = data[max_column].max()
+
+print("\nColumn with Highest Value:")
+print(max_column, "with value:", max_value)
+
+# Count missing values
+print("\nMissing Values in Each Column:")
+print(data.isnull().sum())
+Example Output (Sample)
+Top 5 Rows of Dataset:
+   Name   Age  Marks
+0  Rahul  18   85
+1  Priya  19   92
+2  Aman   18   76
+3  Neha   20   67
+4  Karan  19   58
+Column with Highest Value:
+Marks with value: 92
+Missing Values in Each Column:
+Name     0
+Age      0
+Marks    1
+5 Insights from the Dataset
+The Marks column contains the highest numeric values compared to other columns.
+The dataset shows that most students scored between 60–90 marks.
+There is at least one missing value present in the dataset.
+The top rows help quickly understand the structure of the dataset.
+Data analysis helps identify patterns and errors such as missing or inconsistent values.
+Conclusion
+
+Analyzing datasets helps in understanding patterns, detecting missing values, and extracting useful insights. Tools like Python (programming language) and Pandas (Python library) make data analysis faster and more efficient.

@@ -1,0 +1,80 @@
+Assignment: Artificial Intelligence (AI)
+1. Introduction
+
+Artificial Intelligence (AI) is a branch of computer science that focuses on creating machines or software that can perform tasks which normally require human intelligence. These tasks include learning, reasoning, problem-solving, understanding language, and recognizing patterns.
+
+AI systems analyze data, learn from it, and make decisions with minimal human intervention. Today AI is widely used in many fields such as healthcare, education, transportation, and entertainment.
+
+2. What is Artificial Intelligence?
+
+Artificial Intelligence is the ability of machines to simulate human intelligence processes. It allows computers to think, learn from experience, and improve their performance over time.
+
+AI works by using algorithms, data, and computing power to identify patterns and make predictions.
+
+3. Types of Artificial Intelligence
+1. Narrow AI
+
+This type of AI is designed to perform a specific task.
+Examples include voice assistants and recommendation systems.
+
+Examples:
+
+Siri
+Google Assistant
+Alexa
+2. General AI
+
+General AI refers to machines that can perform any intellectual task that a human can do. This type of AI is still under development.
+
+3. Super AI
+
+Super AI is a theoretical concept where machines become more intelligent than humans.
+
+4. Applications of Artificial Intelligence
+
+AI is used in many areas:
+
+Healthcare
+
+Disease detection
+Medical imaging analysis
+
+Education
+
+Smart tutoring systems
+Automated grading
+
+Transportation
+
+Self-driving vehicles like the Tesla Autopilot
+
+Entertainment
+
+Movie and music recommendations on platforms like Netflix
+5. Advantages of Artificial Intelligence
+Reduces human effort
+Works faster and more accurately
+Can analyze large amounts of data
+Improves productivity
+6. Disadvantages of Artificial Intelligence
+High development cost
+Job displacement in some sectors
+Lack of human emotions and creativity
+Risk of misuse
+7. Future of Artificial Intelligence
+
+The future of AI is very promising. It is expected to transform industries such as healthcare, finance, agriculture, and education. With responsible development, AI can help solve complex global problems.
+
+8. Conclusion
+
+Artificial Intelligence is one of the most important technological developments of the modern world. It is changing how people live and work. While AI offers many benefits, it must be developed and used responsibly to ensure it benefits society.
+
+Learning Outcomes
+
+After completing this assignment, students will be able to:
+
+Understand the basic concept of Artificial Intelligence.
+Identify different types of AI.
+Explain the applications of AI in real life.
+Recognize the advantages and disadvantages of AI.
+Develop awareness about the future impact of AI.

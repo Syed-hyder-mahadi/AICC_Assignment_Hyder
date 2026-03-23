@@ -1,0 +1,44 @@
+Assignment: Text Challenges
+
+Date: 20/03/2026
+
+Description
+
+In natural language processing (NLP), text data collected from social media, chats, or messages is often messy. It may contain slang words, emojis, spelling mistakes (typos), and informal language. Before using this data for machine learning, it must go through text preprocessing to clean and standardize it.
+
+This assignment collects 20 messy sentences and identifies the issues present in each.
+
+Messy Sentences and Issues
+No.	Sentence	Issues Identified
+1	omg this movie was sooo good 😂	Slang, emoji, repeated letters
+2	idk what u r talking about	Slang abbreviations
+3	ths is amazng product	Typo
+4	cant wait 4 the party 🎉	Slang number, emoji
+5	lol that was funny	Slang
+6	i luv this phone sooo much	Slang, repeated letters
+7	whr r u going now	Typos, abbreviations
+8	this game is awsm!!	Slang
+9	gud mrng everyone	Typos
+10	thx for the help 👍	Slang, emoji
+11	im sooo tired today	Repeated letters
+12	wat r the plans 2day	Slang, abbreviations
+13	wow this place is gr8	Slang
+14	i cnt understand this 😕	Slang, emoji
+15	plz send the file asap	Slang abbreviations
+16	ur idea is vry gud	Typos
+17	i hve a qustion abt this	Typos, abbreviations
+18	this is soooo boring 😴	Repeated letters, emoji
+19	wht is going on here	Typo
+20	omg i cant blieve this	Slang, typo
+Preprocessing Needed
+
+To use this text for machine learning, several preprocessing steps are required:
+
+Lowercasing – Convert all text to lowercase for consistency.
+Removing Emojis – Emojis can be removed or converted into words.
+Correcting Typos – Fix spelling errors in words.
+Expanding Slang/Abbreviations – Replace slang like “u” → “you” or “omg” → “oh my god”.
+Removing Extra Characters – Reduce repeated letters such as “soooo” → “so”.
+Conclusion
+
+Messy text data can affect the performance of machine learning models. Proper preprocessing helps convert unstructured text into clean, meaningful data that can be analyzed effectively in Natural Language Processing using tools like Python (programming language).

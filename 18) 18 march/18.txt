@@ -1,0 +1,48 @@
+Assignment: Customer Segmentation
+
+Date: 18/03/2026
+
+Description
+
+Customer segmentation is a technique used to divide customers into different groups based on similar characteristics such as income and spending habits. In this assignment, we use K-Means clustering to analyze a mall dataset and identify different customer groups.
+
+Companies such as Amazon and Walmart use similar techniques to understand customer behavior and improve marketing strategies.
+
+Python Code (K-Means Clustering)
+import pandas as pd
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Load the dataset
+data = pd.read_csv("Mall_Customers.csv")
+
+# Select relevant features
+X = data[['Annual Income (k$)', 'Spending Score (1-100)']]
+
+# Apply K-Means clustering
+kmeans = KMeans(n_clusters=5, random_state=42)
+data['Cluster'] = kmeans.fit_predict(X)
+
+# Visualize clusters
+plt.scatter(X['Annual Income (k$)'], X['Spending Score (1-100)'], c=data['Cluster'])
+plt.xlabel("Annual Income (k$)")
+plt.ylabel("Spending Score (1-100)")
+plt.title("Customer Segmentation using K-Means")
+plt.show()
+Customer Groups Identified
+
+After applying K-Means clustering, the following customer groups can be identified:
+
+High Income – High Spending
+These customers earn a lot and spend frequently. They are the most valuable customers for the mall.
+High Income – Low Spending
+Customers with high income but low spending habits. Businesses may target them with special offers.
+Low Income – High Spending
+These customers spend more despite having lower income.
+Low Income – Low Spending
+Customers who spend less and may not contribute significantly to revenue.
+Average Income – Moderate Spending
+Regular customers with balanced spending patterns.
+Conclusion
+
+Customer segmentation helps businesses understand different types of customers and design better marketing strategies. Using machine learning algorithms like K-Means clustering, companies can analyze data patterns and improve customer engagement and sales.
